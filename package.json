@@ -1,0 +1,22 @@
+{
+	"name": "bunapi",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bun --watch index.ts",
+		"test": "bun --watch test",
+		"format": "bun biome format ./app --write",
+		"lint": "bun biome check --apply-unsafe ./app",
+		"lint:ci": "bun biome check ./app",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.2.2",
+		"bun-types": "latest",
+		"husky": "^8.0.0",
+		"lint-staged": "^15.0.2"
+	},
+	"dependencies": {
+		"typescript": "^5.4.5"
+	}
+}

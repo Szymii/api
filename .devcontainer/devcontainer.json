@@ -1,0 +1,25 @@
+{
+	"name": "Existing Dockerfile",
+	"build": {
+		"context": "..",
+		"dockerfile": "./Dockerfile"
+	},
+	"postCreateCommand": "npm i -g bun",
+	"forwardPorts": [3000],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"waderyan.gitblame",
+				"dbaeumer.vscode-eslint",
+				"oven.bun-vscode",
+				"ms-azuretools.vscode-docker",
+				"otovo-oss.htmx-tags",
+				"yoavbls.pretty-ts-errors",
+				"bradlc.vscode-tailwindcss",
+				"GitHub.vscode-github-actions",
+				"biomejs.biome"
+			]
+		}
+	}
+}
