@@ -1,7 +1,9 @@
+import app from ".";
 import { describe, expect, it } from "bun:test";
 
 describe("App is up", () => {
-	it("should work", () => {
-		expect(2 + 2).toBe(4);
+	it("/ should return 200", async () => {
+		const res = await app.request("/");
+		expect(res.status).toBe(200);
 	});
 });
