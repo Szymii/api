@@ -17,6 +17,7 @@
 		"lint-staged": "^15.0.2"
 	},
 	"dependencies": {
+		"hono": "^4.4.6",
 		"typescript": "^5.4.5"
 	}
 }
