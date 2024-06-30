@@ -18,7 +18,8 @@
 				"yoavbls.pretty-ts-errors",
 				"bradlc.vscode-tailwindcss",
 				"GitHub.vscode-github-actions",
-				"biomejs.biome"
+				"biomejs.biome",
+				"github.vscode-github-actions"
 			]
 		}
 	}
