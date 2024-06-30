@@ -2,6 +2,13 @@ import { db } from "./db";
 import { describe, expect, it } from "bun:test";
 
 describe("DB is working", () => {
+	it("should not create new DB instance", () => {
+		const testDb = db();
+		const testDb2 = db();
+
+		expect(testDb === testDb2).toBe(true);
+	});
+
 	it("should create (in memory) table, insert data, and read them", () => {
 		const testDb = db();
 		testDb.run(
