@@ -1,3 +1,6 @@
 {
-	"cSpell.words": ["Hono"]
+	"cSpell.words": ["Hono"],
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	}
 }
