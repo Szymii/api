@@ -19,7 +19,8 @@
 				"bradlc.vscode-tailwindcss",
 				"GitHub.vscode-github-actions",
 				"biomejs.biome",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"GitHub.copilot"
 			]
 		}
 	}
