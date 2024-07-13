@@ -1,4 +1,4 @@
-To install dependencies:
+## To install dependencies:
 
 ```bash
 bun install
@@ -11,6 +11,7 @@ Scripts:
     "test": "bun --watch test",
     "format": "bun biome format ./app --write",
     "lint": "bun biome check --apply-unsafe ./app" # Fire some error at the and but works
+    "migrate": "bun run ./app/_migrations/runMigrations.ts"
 ```
 
 `bun install --production` is currently bugged, so you have to comment `"prepare": "husky install"`. Do not worry about biome errors on package json. Bun allows comments but biome not :/
@@ -18,3 +19,11 @@ Scripts:
 https://github.com/oven-sh/bun/issues/7969
 
 This project was created using `bun init` in bun v1.0.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+
+## Migrations
+
+run to create empty database with basic tables
+```bash
+bun migrate 
+```
