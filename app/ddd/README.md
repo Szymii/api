@@ -1,18 +1,22 @@
 ### Tactical DDD Building blocks
 
 ## Application
+- Commands
 - Service
-- DTO
 
 ## Domain
 - Entity
 - VO
-- Aggregate
 - Factory
 - Service
+- Aggregate
 - Policy
 
 ## Infra
 - Repository
 - Adapters
 - ORM / Data access api
+
+## Outside
+- Routes
+- Controllers

@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { createBunWebSocket } from "hono/bun";
+import { router as menuRouter } from "./app/ddd/menu/routes";
 import { router } from "./app/home/routes";
 import { logger } from "./app/logger";
 import { router as userRouter } from "./app/user/router";
@@ -12,6 +13,7 @@ app.use(logger);
 
 app.route("/", router(upgradeWebSocket));
 app.route("/user", userRouter());
+app.route("/menu", menuRouter());
 
 app.get("/env", (c) => {
 	return c.text(`${Bun.env.NODE_ENV}`);

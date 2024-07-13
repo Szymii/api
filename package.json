@@ -8,7 +8,8 @@
 		"format": "bun biome format ./app --write",
 		"lint": "bun biome check --apply-unsafe ./app",
 		"lint:ci": "bun biome check ./app",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"migrate": "bun run ./app/_migrations/runMigrations.ts"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.2.2",
