@@ -4,8 +4,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "bun --watch index.ts",
-		"test-w": "TEST=true bun --watch test --preload ./setup.ts",
-		"test-ci": "TEST=true bun test --preload ./setup.ts",
+		"test:w": "TEST=true bun --watch test --preload ./setup.ts",
+		"test:ci": "TEST=true bun test --preload ./setup.ts",
 		"format": "bun biome format ./app --write",
 		"lint": "bun biome check --apply-unsafe ./app",
 		"lint:ci": "bun biome check ./app",
